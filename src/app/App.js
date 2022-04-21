@@ -1,11 +1,17 @@
-import React from "react";
+import Transactions from '../features/transactions/Transactions';
+import Budgets from '../features/budgets/Budgets';
+import React from 'react';
 
-const App = () => {
+function App() {
     return (
-        <div>
-            <h1>Test</h1>
+        <div className="App">
+            <header className="App-header">
+                <h1>Expense Tracker</h1>
+                <Budgets />
+                <Transactions />
+            </header>
         </div>
     );
-};
+}
 
 export default App;
